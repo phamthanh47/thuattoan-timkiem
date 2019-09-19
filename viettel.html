@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function validateViettel(str) {
+        let patt=/^086|09[6-8]|03[2-9][0-9]{7}$/;
+        let result=patt.test(str);
+        if(result){
+            alert("la so dien thoai nha mang viettel");
+        }
+        else
+            alert("khong la so dien thoai cua nha mang viettel")
+    }
+    let str="0398667889"
+    validateViettel(str);
+</script>
+</body>
+</html>
